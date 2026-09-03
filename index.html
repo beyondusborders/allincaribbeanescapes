@@ -3,58 +3,46 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta
-      name="description"
-      content="Find Caribbean island events and build an easy DIY getaway around them."
-    >
-    <meta name="theme-color" content="#0e2d3b">
+    <meta name="description" content="Find Caribbean island events and build an easy DIY getaway around them.">
+    <meta name="theme-color" content="#ffffff">
     <title>AllIn Caribbean Escapes | Island Events. Easy Getaways.</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
-      rel="stylesheet"
-    >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
     <header class="site-header">
-      <div class="wrap header-inner">
-        <a class="brand" href="/" aria-label="AllIn Caribbean Escapes home">
-          <span class="brand-name">AllIn</span>
-          <span class="brand-place">Caribbean Escapes</span>
+      <div class="wrap masthead">
+        <a class="brand" href="./" aria-label="AllIn Caribbean Escapes home">
+          <img class="brand-logo" src="assets/aice-logo.png" width="600" height="600" alt="AllIn Caribbean Escapes">
         </a>
-
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="#events">Events</a>
-          <a href="#how-it-works">How it works</a>
           <a href="#islands">Islands</a>
+          <a href="#how-it-works">How it works</a>
         </nav>
       </div>
     </header>
 
     <main id="main-content">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="wrap hero-grid">
+        <div class="wrap">
+          <img
+            class="hero-image"
+            src="assets/aice-hero.jpg"
+            width="820"
+            height="360"
+            alt="Caribbean beach, sea turtles and island adventures"
+            fetchpriority="high"
+          >
           <div class="hero-copy">
             <p class="eyebrow">Island Events. Easy Getaways.</p>
             <h1 id="hero-title">Come for the event.<br>Stay for the adventures.</h1>
-            <p class="hero-intro">
-              Find the festival, match it with a stay, then add as much island as
-              your calendar allows. No package. No fuss. Just a better reason to go.
+            <p>
+              Start with something happening. Add a well-placed stay and a few
+              good reasons to linger. You choose what fits.
             </p>
-            <a class="button" href="#events">See what’s coming up</a>
-          </div>
-
-          <div class="hero-card" aria-label="The AllIn getaway formula">
-            <p class="card-kicker">The easy way in</p>
-            <ol class="escape-steps">
-              <li><span>01</span><strong>Pick the event</strong></li>
-              <li><span>02</span><strong>Choose your stay</strong></li>
-              <li><span>03</span><strong>Add an adventure</strong></li>
-            </ol>
+            <a class="button" href="#events">Explore upcoming events</a>
           </div>
         </div>
       </section>
@@ -66,40 +54,65 @@
               <p class="eyebrow">Plan around something good</p>
               <h2 id="events-title">Upcoming island events</h2>
             </div>
-            <p class="section-note">Fresh dates and getaway guides are on the way.</p>
+            <p>Verified dates. Practical getaway ideas. No package required.</p>
           </div>
-
-          <div class="event-grid" id="islands">
-            <article class="event-card event-card-featured">
+          <div class="event-grid">
+            <article class="event-card">
               <p class="event-status">On the horizon</p>
               <h3>Festivals, food and island traditions</h3>
-              <p>Verified events paired with practical places to stay and nearby adventures.</p>
-              <a href="#how-it-works">See how an escape comes together <span aria-hidden="true">→</span></a>
+              <p>
+                The first event guides are coming together now, with official
+                details and the useful travel pieces gathered in one place.
+              </p>
+              <a href="#how-it-works">See how the guides work</a>
             </article>
-
-            <article class="event-card event-card-quiet">
+            <article class="event-card event-card-accent" id="islands">
               <p class="event-status">Island by island</p>
               <h3>Twenty-seven destinations. One useful calendar.</h3>
-              <p>Browse by island when the first event guides land.</p>
+              <p>
+                Browse the Caribbean by what is happening and when—not by another
+                endless list of beaches.
+              </p>
             </article>
           </div>
         </div>
       </section>
 
       <section class="how-section" id="how-it-works" aria-labelledby="how-title">
-        <div class="wrap how-grid">
-          <div>
-            <p class="eyebrow">Built for DIY travelers</p>
-            <h2 id="how-title">We narrow it down.<br>You make it yours.</h2>
-          </div>
-          <div class="how-copy">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Built for DIY travelers</p>
+              <h2 id="how-title">One event. A short list. Your trip.</h2>
+            </div>
             <p>
-              Each guide starts with one verified island event. Then we curate three
-              sensible stays and three nearby adventures—enough choice to fit your trip,
-              without turning planning into a second job.
+              Enough guidance to make planning comfortable. Enough freedom to
+              make the getaway yours.
             </p>
-            <p class="signoff">Wish you were here.</p>
           </div>
+          <ol class="escape-steps">
+            <li>
+              <span>01</span>
+              <div>
+                <h3>Pick the event</h3>
+                <p>Start with verified dates, tickets and venue details.</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>Choose your stay</h3>
+                <p>Compare three sensible options near the action.</p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>Add an adventure</h3>
+                <p>Stay longer—or don’t—with three nearby ideas to choose from.</p>
+              </div>
+            </li>
+          </ol>
         </div>
       </section>
     </main>
@@ -107,7 +120,7 @@
     <footer class="site-footer">
       <div class="wrap footer-inner">
         <p>© <span id="year">2026</span> AllIn Caribbean Escapes</p>
-        <p>Independent inspiration for build-it-yourself Caribbean travel.</p>
+        <p>Wish you were here.</p>
       </div>
     </footer>
 
